@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tahmim Hasan Sany</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		
+		h1 {
+			font-size: 48px;
+			margin-bottom: 10px;
+		}
+		
+		h2 {
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
+		
+		p {
+			font-size: 18px;
+			margin-bottom: 10px;
+			line-height: 1.5;
+		}
+		
+		.skills {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 20px 0;
+		}
+		
+		.skills div {
+			background-color: #ddd;
+			color: #333;
+			font-size: 14px;
+			padding: 10px;
+			border-radius: 5px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		
+		.skills div:hover {
+			background-color: #555;
+			color: #fff;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Tahmim Hasan Sany</h1>
+		<h2>Software Engineer</h2>
+		<p>I am a software engineer with experience in developing web and mobile applications using a variety of technologies. I am passionate about solving complex problems and creating high-quality software that meets the needs of users.</p>
+		
+		<div class="skills">
+			<div>HTML</div>
+			<div>CSS</div>
+			<div>JavaScript</div>
+			<div>React</div>
+			<div>Node.js</div>
+			<div>Express.js</div>
+			<div>MongoDB</div>
+			<div>MySQL</div>
+			<div>Git</div>
+		</div>
+	</div>
+	
+	<script>
+		let skills = document.querySelectorAll('.skills div');
+		
+		skills.forEach(skill => {
+			skill.addEventListener('click', () => {
+				skill.classList.toggle('active');
+			});
+		});
+	</script>
+</body>
+</html>
