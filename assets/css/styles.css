@@ -1,0 +1,43 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: relative;
+}
+
+#cover-slider {
+    height: 400px;
+    overflow: hidden;
+}
+
+#cover-slider img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
